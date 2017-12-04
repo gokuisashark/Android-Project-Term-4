@@ -1,0 +1,33 @@
+[
+  { "name": "Nasi Lemak",
+    "description": "Nasi Lemak description",
+    "address": "nasilemakaddress"},
+
+  { "name": "Laksa",
+    "description":"",
+    "address": ""},
+
+  { "name": "Chilli Crab",
+    "description":"",
+    "address": ""},
+
+  { "name": "Chicken Rice",
+    "description":"",
+    "address": ""},
+
+  { "name": "Hokkien Prawn Mee",
+    "description":"",
+    "address": ""},
+
+  { "name": "Char Kway Teow",
+    "description":"",
+    "address": ""},
+
+  { "name": "Kaya Toast and Coffee",
+    "description":"",
+    "address": ""},
+
+  { "name": "Cheng Tng",
+    "description":"",
+    "address": ""}
+]

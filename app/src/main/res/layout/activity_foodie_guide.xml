@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPastelOrange"
+    tools:context="com.example.fish.androidprojecttouristplanner.FoodieGuideActivity">
+
+    <TextView
+        android:id="@+id/beyourownfoodtourguide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Be your own food tour guide today!"
+        android:textSize="24dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/chilicrabheader"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/foodie_guide_chili_crab_header" />
+
+    <TextView
+        android:id="@+id/bodytextfoodguide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Want to explore all of Singapore's great food but do not know where to start? Fret not! This food tour will bring you to all the best grubs considered by locals and tourists likewise!"
+        android:textSize="16dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/foodGuideStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="START NOW!"
+        android:background="@color/deepOrange300"
+        android:clickable="true"/>
+
+</LinearLayout>

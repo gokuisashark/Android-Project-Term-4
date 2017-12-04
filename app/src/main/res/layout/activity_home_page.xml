@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPastelOrange"
+    tools:context="com.example.fish.androidprojecttouristplanner.HomePageActivity">
+
+    <Button
+        android:id="@+id/foodieGuideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/learnCoffeeButton"
+        android:layout_marginTop="-120dp"
+        android:drawableLeft="@drawable/icon_restaurant_64p"
+        android:text="Be your own foodie guide!"
+        android:clickable="true"
+        android:background="@color/deepOrange300"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:ems="16"/>
+
+    <Button
+        android:id="@+id/learnCoffeeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/icon_coffee_64p"
+        android:text="Learn how to order your coffee"
+        android:clickable="true"
+        android:background="@color/deepOrange300"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:ems="16"/>
+
+    <Button
+        android:id="@+id/findWaySGButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/learnCoffeeButton"
+        android:layout_marginTop="120dp"
+        android:drawableLeft="@drawable/icon_merlion_64p"
+        android:text="Find your way around Singapore!"
+        android:clickable="true"
+        android:background="@color/deepOrange300"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        android:ems="16"/>
+</RelativeLayout>
