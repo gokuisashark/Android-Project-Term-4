@@ -62,7 +62,7 @@ public class FoodieGuideAdapter extends RecyclerView.Adapter<FoodieGuideAdapter.
         }
 
         public void bind(int position) {
-            String filename = data[position].name;
+            String filename = data[position].image;
             String packageName = parentContext.getPackageName();
             String typeOfResource = "mipmap";
 

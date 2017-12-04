@@ -30,6 +30,15 @@ public class HomePageActivity extends AppCompatActivity {
                 startActivity(foodieGuideIntent);
             }
         });
+
+        learnCoffeeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                Intent coffeeIntent = new Intent(context, CoffeeActivity.class);
+                startActivity(coffeeIntent);
+            }
+        });
     }
 
 }

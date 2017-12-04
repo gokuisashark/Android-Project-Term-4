@@ -1,0 +1,38 @@
+[
+  { "name": "Kopi",
+    "description": "Standard rich coffee, with sweetened condensed milk."},
+
+  { "name": "Teh",
+    "description": "Standard tea, with sweetened condensed milk."},
+
+  { "name": "Bing",
+    "description": "Iced. i.e. if you want standard condensed milk coffee with ice, ask for Kopi Bing "},
+
+  { "name": "O",
+    "description": "Black. With sugar. i.e. Kopi O = Black coffee with sugar"},
+
+  { "name": "C",
+    "description": "Evaporated milk. Kopi C = Standard Kopi with added sugar and evaporated milk"},
+
+  { "name": "Kosong",
+    "description": "Zero / empty. i.e. no sugar. Kopi O Kosong = Black coffee with no sugar"},
+
+  { "name": "Gau",
+    "description": "Thick. Kopi Gau will give a stronger coffee brew."},
+
+  { "name": "Boh",
+    "description": "Slim/Thin. Kopi Boh will give a weaker coffee brew."},
+
+  { "name": "Siu Dai",
+    "description": "Less sweet, either less condensed milk or less sugar."},
+
+  { "name": "Gah Dai",
+    "description": "More sweet. More condensed milk and/or more sugar."},
+
+  { "name": "Da Bao",
+    "description": "Take-away / To-Go. Kopi Da Bao means having your Kopi to go."},
+
+  { "name": "You can mix them up!",
+    "description": "For example, Kopi O Bing Gau Siu Dai = Stronger iced black coffee, less sweet."}
+
+]

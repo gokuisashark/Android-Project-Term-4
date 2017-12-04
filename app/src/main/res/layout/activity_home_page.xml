@@ -29,7 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:drawableLeft="@drawable/icon_coffee_64p"
-        android:text="Learn how to order your coffee"
+        android:text="Learn how to order your coffee/tea"
         android:clickable="true"
         android:background="@color/deepOrange300"
         android:textColor="@color/white"

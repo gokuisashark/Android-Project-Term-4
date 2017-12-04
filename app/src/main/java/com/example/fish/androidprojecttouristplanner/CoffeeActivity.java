@@ -12,33 +12,31 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class StartFoodieGuideActivity extends AppCompatActivity {
+public class CoffeeActivity extends AppCompatActivity {
 
-    FoodieGuideJsonData[] foodieGuideJsonData;
-    private RecyclerView foodieGuide;
-    private FoodieGuideAdapter foodieGuideAdapter;
+    CoffeeJsonData[] coffeeJsonData;
+    private RecyclerView coffeeList;
+    private CoffeeAdapter mCoffeeAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_foodie_guide);
+        setContentView(R.layout.activity_coffee);
 
         parseJson();
 
-        foodieGuide = (RecyclerView) findViewById(R.id.recyclerViewFoodieGuide);
+        coffeeList = (RecyclerView) findViewById(R.id.recyclerViewCoffee);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        foodieGuide.setLayoutManager(linearLayoutManager);
+        coffeeList.setLayoutManager(linearLayoutManager);
 
-        foodieGuideAdapter = new FoodieGuideAdapter(this, foodieGuideJsonData);
-        foodieGuide.setAdapter(foodieGuideAdapter);
+        mCoffeeAdapter = new CoffeeAdapter(this, coffeeJsonData);
+        coffeeList.setAdapter(mCoffeeAdapter);
     }
 
-    public class FoodieGuideJsonData {
+    public class CoffeeJsonData {
         String name;
         String description;
-        String address;
-        String image;
     }
 
     private String readTxt(int resource) {
@@ -62,11 +60,10 @@ public class StartFoodieGuideActivity extends AppCompatActivity {
 
     void parseJson() {
         Gson gson = new Gson();
-        String jsonData = readTxt(R.raw.foodplaces);
+        String jsonData = readTxt(R.raw.coffee);
         Log.i("Fish", jsonData);
 
-        foodieGuideJsonData = gson.fromJson(jsonData, FoodieGuideJsonData[].class);
+        coffeeJsonData = gson.fromJson(jsonData, CoffeeJsonData[].class);
     }
 
 }
-

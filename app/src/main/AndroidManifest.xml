@@ -20,7 +20,8 @@
         <activity
             android:name=".FoodieGuideActivity"
             android:parentActivityName=".HomePageActivity" />
-        <activity android:name=".StartFoodieGuideActivity"></activity>
+        <activity android:name=".StartFoodieGuideActivity" />
+        <activity android:name=".CoffeeActivity"></activity>
     </application>
 
 </manifest>
