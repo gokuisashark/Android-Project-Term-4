@@ -18,5 +18,19 @@
         android:textSize="32dp"
         android:text="food name" />
 
+    <TextView
+        android:id="@+id/food_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="food description"/>
+
+    <TextView
+        android:id="@+id/food_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="food address"/>
+
 
 </LinearLayout>

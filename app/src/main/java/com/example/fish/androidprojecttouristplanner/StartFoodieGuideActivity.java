@@ -14,29 +14,27 @@ import java.io.InputStreamReader;
 
 public class StartFoodieGuideActivity extends AppCompatActivity {
 
-    FoodPlacesJsonData[] foodPlacesJsonData;
-    private RecyclerView foodieguide;
-    private FoodieGuideAdapter mFoodieGuideAdapter;
+    FoodieGuideJsonData[] foodieGuideJsonData;
+    private RecyclerView foodieGuide;
+    private FoodieGuideAdapter foodieGuideAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_foodie_guide);
 
         parseJson();
 
-        foodieguide = (RecyclerView) findViewById(R.id.recyclerViewFoodieGuide);
+        foodieGuide = (RecyclerView) findViewById(R.id.recyclerViewFoodieGuide);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        foodieguide.setLayoutManager(linearLayoutManager);
+        foodieGuide.setLayoutManager(linearLayoutManager);
 
-        mFoodieGuideAdapter = new FoodieGuideAdapter(this, foodPlacesJsonData);
-        foodieguide.setAdapter(mFoodieGuideAdapter);
-
+        foodieGuideAdapter = new FoodieGuideAdapter(this, foodieGuideJsonData);
+        foodieGuide.setAdapter(foodieGuideAdapter);
     }
 
-    public class FoodPlacesJsonData {
+    public class FoodieGuideJsonData {
         String name;
         String description;
         String address;
@@ -51,25 +49,23 @@ public class StartFoodieGuideActivity extends AppCompatActivity {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
 
-            while ((line = reader.readLine()) != null) {
+            while( (line = reader.readLine()) != null ){
                 output = output + line;
             }
-        } catch (Exception e) {
+
+        }catch (Exception e){
             e.printStackTrace();
         }
         return output;
-
     }
 
-    void parseJson(){
+    void parseJson() {
         Gson gson = new Gson();
-        String jsonData = readTxt((R.raw.foodplaces));
+        String jsonData = readTxt(R.raw.foodplaces);
         Log.i("Fish", jsonData);
-        foodPlacesJsonData = gson.fromJson(jsonData, FoodPlacesJsonData[].class);
 
-
+        foodieGuideJsonData = gson.fromJson(jsonData, FoodieGuideJsonData[].class);
     }
-
-
 
 }
+
