@@ -18,12 +18,5 @@
         android:textSize="32dp"
         android:text="food name" />
 
-    <TextView
-        android:id="@+id/food_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:textSize="32dp"
-        android:text="0"/>
 
 </LinearLayout>

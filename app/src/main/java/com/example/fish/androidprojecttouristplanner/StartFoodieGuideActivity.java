@@ -2,6 +2,7 @@ package com.example.fish.androidprojecttouristplanner;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
@@ -15,12 +16,24 @@ public class StartFoodieGuideActivity extends AppCompatActivity {
 
     FoodPlacesJsonData[] foodPlacesJsonData;
     private RecyclerView foodieguide;
-    private FoodieGuideAdapter foodieGuideAdapter;
+    private FoodieGuideAdapter mFoodieGuideAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_foodie_guide);
+
+        parseJson();
+
+        foodieguide = (RecyclerView) findViewById(R.id.recyclerViewFoodieGuide);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        foodieguide.setLayoutManager(linearLayoutManager);
+
+        mFoodieGuideAdapter = new FoodieGuideAdapter(this, foodPlacesJsonData);
+        foodieguide.setAdapter(mFoodieGuideAdapter);
+
     }
 
     public class FoodPlacesJsonData {
@@ -52,6 +65,8 @@ public class StartFoodieGuideActivity extends AppCompatActivity {
         Gson gson = new Gson();
         String jsonData = readTxt((R.raw.foodplaces));
         Log.i("Fish", jsonData);
+        foodPlacesJsonData = gson.fromJson(jsonData, FoodPlacesJsonData[].class);
+
 
     }
 
