@@ -10,13 +10,13 @@
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:padding="8dp"/>
+        android:padding="12dp"/>
 
     <TextView
         android:id="@+id/food_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="12dp"
         android:textSize="32dp"
         android:text="food name" />
 
@@ -24,7 +24,7 @@
         android:id="@+id/food_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="12dp"
         android:textSize="20dp"
         android:text="food description"/>
 
@@ -32,8 +32,12 @@
         android:id="@+id/food_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="12dp"
         android:text="food address"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/deepOrange300"/>
 
 </LinearLayout>

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Be your own food tour guide today!"
         android:textSize="24dp"
-        android:textColor="@color/white"/>
+        android:layout_gravity="center"/>
 
     <ImageView
         android:id="@+id/chilicrabheader"
@@ -28,16 +28,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Want to explore all of Singapore's great food but do not know where to start? Fret not! This food tour will bring you to all the best grubs considered by locals and tourists likewise!"
-        android:textSize="16dp"
-        android:textColor="@color/white" />
+        android:text="Want to explore all of Singapore's greatest foods but do not know where to start? Fret not! This food tour will bring you to all the best grubs considered by locals and tourists likewise! Bringing you the best foods in Singapore, ranging from amazing breakfast to sweet treats for dessert."
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/foodGuideStartButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="START NOW!"
         android:background="@color/deepOrange300"
         android:clickable="true"/>

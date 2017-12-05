@@ -2,7 +2,9 @@ package com.example.fish.androidprojecttouristplanner;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -52,7 +54,7 @@ public class FoodieGuideAdapter extends RecyclerView.Adapter<FoodieGuideAdapter.
         return data.length;
     }
 
-    class FoodieViewHolder extends RecyclerView.ViewHolder {
+    class FoodieViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView foodName;
         TextView foodDesc;
         TextView foodAddr;
@@ -61,10 +63,13 @@ public class FoodieGuideAdapter extends RecyclerView.Adapter<FoodieGuideAdapter.
         FoodieViewHolder(View view) {
             super(view);
 
+            view.setOnClickListener(this);
+
             foodImage = (ImageView) view.findViewById(R.id.food_image);
             foodName = (TextView) view.findViewById(R.id.food_text);
             foodDesc = (TextView) view.findViewById(R.id.food_description);
             foodAddr = (TextView) view.findViewById(R.id.food_address);
+
         }
 
         public void bind(int position) {
@@ -78,6 +83,25 @@ public class FoodieGuideAdapter extends RecyclerView.Adapter<FoodieGuideAdapter.
             foodName.setText(data[position].name);
             foodDesc.setText(data[position].description);
             foodAddr.setText(data[position].address);
+
+        }
+
+        public void onClick(View view) {
+
+            int clickedPosition = getAdapterPosition();
+
+            String myLocation = foodAddr.getText().toString();
+
+            Uri.Builder builder = new Uri.Builder();
+            builder.scheme("geo").opaquePart("0,0").appendQueryParameter("q", myLocation);
+
+            Uri geoLocation = builder.build();
+            Log.i("Fish", "the URI " + geoLocation.toString());
+
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, geoLocation);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            parentContext.startActivity(mapIntent);
+
 
         }
 

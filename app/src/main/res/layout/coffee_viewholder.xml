@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/colorPastelOrange">
 
     <TextView
         android:id="@+id/coffeeName"
@@ -11,7 +12,12 @@
         android:layout_height="wrap_content"
         android:text="coffee name"
         android:textSize="32dp"
-        android:padding="8dp"
+        android:padding="12dp"
         android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/deepOrange300"/>
 
 </LinearLayout>
