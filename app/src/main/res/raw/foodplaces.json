@@ -1,41 +1,41 @@
 [
   { "name": "Selera Rasa Nasi Lemak",
-    "description": "Fragrant coconut rice, crispy fried chicken, with a topping of fried egg, and sweet-savoury sambal chilli, what more could you ask for from this traditional malay dish.",
+    "description": "Fragrant coconut rice, crispy fried chicken, with a topping of fried egg, and sweet-savoury sambal chilli, what more could you ask for from this traditional malay dish. GET THERE NOW!",
     "address": "2 Adam Road, #01-02, Adam Road Food Centre, Singapore 289876",
     "image": "nasilemak"},
 
   { "name": "328 Katong Laksa",
-    "description":"A good bowl of noodles, topped with fishcakes, prawns and cockles, swimming in mildly spicy coconut milk curry. Spicy food can taste good too!",
+    "description":"A good bowl of noodles, topped with fishcakes, prawns and cockles, swimming in mildly spicy coconut milk curry. Spicy food can taste good too! GET THERE NOW!",
     "address": "51 East Coast Road, Singapore 428770",
     "image": "laksa"},
 
   { "name": "Master Crab Seafood Restaurant Chilli Crab",
-    "description":"Freshly caught, freshly served. Get your fix of Singapore's most iconic Chilli Crab today. Don't forget to order of a side of fried buns so you can soak up all the delicious sauce after devouring your crab!",
+    "description":"Freshly caught, freshly served. Get your fix of Singapore's most iconic Chilli Crab today. Don't forget to order of a side of fried buns so you can soak up all the delicious sauce after devouring your crab! GET THERE NOW!",
     "address": "Blk 19, Ghim Moh Road, Singapore 270019",
     "image": "chillicrab"},
 
   { "name": "Hainan Chicken Rice Ball",
-    "description":"Heard of the normal Hainanese Chicken Rice? How about trying these classic chicken rice balls? Traditionally made so that the rice can be eaten with your hands, while at the same time not losing all the awesome flavours!",
+    "description":"Heard of the normal Hainanese Chicken Rice? How about trying these classic chicken rice balls? Traditionally made so that the rice can be eaten with your hands, while at the same time not losing all the awesome flavours! GET THERE NOW!",
     "address": "3 Dickson Road, Singapore 209530",
     "image": "chickenriceball"},
 
   { "name": "Nam Sing Hokkien Fried Mee",
-    "description":"Hokkien prawn mee, one of Singapore's most classic dishes. A simple yet delicious meal, packed into fried noodles, topped with fresh prawns, squids, fried eggs and lard. Not to be missed!",
+    "description":"Hokkien prawn mee, one of Singapore's most classic dishes. A simple yet delicious meal, packed into fried noodles, topped with fresh prawns, squids, fried eggs and lard. Not to be missed! GET THERE NOW!",
     "address": "51 Old Airport Road, #01-32, Old Airport Road Food Centre, Singapore 390051",
     "image": "hokkienmee"},
 
   { "name": "Zion Road Fried Kway Teow",
-    "description":"Noodles tossed in dark soy sauce, fried to perfection along with cockles and dried Chinese sausages. Nothing beats lunch better than Char Kway Teow!",
+    "description":"Noodles tossed in dark soy sauce, fried to perfection along with cockles and dried Chinese sausages. Nothing beats lunch better than Char Kway Teow! GET THERE NOW!",
     "address": "70 Zion Road, Singapore 247792",
     "image": "charkwayteow"},
 
   { "name": "Keng Wah Sung Cafe Kaya Toast and Coffee",
-    "description":"One of the most traditional coffeehouses in Singapore, serves you the best Kaya Toast and soft-boiled eggs, alongside traditional coffee. Simple, yet amazing. Best eaten for breakfast.",
+    "description":"One of the most traditional coffeehouses in Singapore, serves you the best Kaya Toast and soft-boiled eggs, alongside traditional coffee. Simple, yet amazing. Best eaten for breakfast. GET THERE NOW!",
     "address": "783 Geylang Road, Singapore 389672",
     "image": "kayatoast"},
 
   { "name": "Ye Lai Xiang Cheng Tng",
-    "description":"Best dessert for the hot climate in Singapore! Loads of toppings including longan, dried wintermelon strips, and lotus seeds. Its amazing how a bowl of dessert can complete your meal so wonderfully.",
+    "description":"Best dessert for the hot climate in Singapore! Loads of toppings including longan, dried wintermelon strips, and lotus seeds. Its amazing how a bowl of dessert can complete your meal so wonderfully. GET THERE NOW!",
     "address": "Stall #31, Bedok Corner Food Centre, 1 Bedok Road, Singapore 469572",
     "image": "chengtng"}
 ]

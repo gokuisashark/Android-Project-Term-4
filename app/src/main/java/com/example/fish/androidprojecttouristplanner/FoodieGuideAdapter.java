@@ -2,6 +2,7 @@ package com.example.fish.androidprojecttouristplanner;
 
 
 import android.content.Context;
+import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -59,6 +60,11 @@ public class FoodieGuideAdapter extends RecyclerView.Adapter<FoodieGuideAdapter.
 
         FoodieViewHolder(View view) {
             super(view);
+
+            foodImage = (ImageView) view.findViewById(R.id.food_image);
+            foodName = (TextView) view.findViewById(R.id.food_text);
+            foodDesc = (TextView) view.findViewById(R.id.food_description);
+            foodAddr = (TextView) view.findViewById(R.id.food_address);
         }
 
         public void bind(int position) {
